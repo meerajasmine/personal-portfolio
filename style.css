@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Nanum+Gothic:wght@400;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans SC", sans-serif;
+    line-height: 26px;
+    color: #994C58;
+    word-spacing: 10px;
+}
+p{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    margin: 10px;
+}
+.head3{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    margin: 10px;
+    color: white;
+}
+h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 64px;
+    line-height: 65px;
+    text-shadow: 2px 2px 5px rgb(223, 75, 75);
+}
+
+h3{
+    font-size: 45px;
+    line-height: 65px;
+    color: white;
+}
+h4 {
+    font-size: 45px;
+    line-height: 65px;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+}
+.italic{
+    font-style: italic;
+}
+section{
+    padding-bottom: 150px;
+}
+* {
+    animation: CSSSscrolReveal ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+@keyframes CSSscrollReveal{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.color-text{
+    color:#E2725B;
+}
+body{
+    background-color: rgb(239, 224, 224);
+    scroll-behavior: inherit;
+}
+header{
+    background: #EA8C8C;
+    box-shadow: 0 5px 15px #ac7474;
+    z-index: 999;
+    height: 80px;
+    position: sticky;
+    top:0;
+    left: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #994C58;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #6e323b;
+}
+
+
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+.color-text-bold{
+    color:#E2725B;
+    font-size: 25px;
+}
+.home-box{
+    background-color:#e8b8b8;
+    border: 5px solid #F7D6D0;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 70px;
+    width: 1200px;
+    border-radius: 50px;
+    box-shadow: 0 3px 8px #946666;
+    padding: 80px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.objective{
+    width: 700px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+.button-icon-sizing{
+    height: 20px;
+    width: 20px;
+
+}
+.link-button{
+    background-color:white;
+    color: rgb(249, 91, 117);
+    padding: 5px;
+    padding-bottom:0px;
+    border-radius: 40px;
+    margin-right: 10px;
+    border: 1px solid rgb(112, 41, 53);
+    transition: 1s ease;
+}
+.link-button-resume{
+    background-color:rgb(196, 101, 101);
+    color: rgb(236, 76, 102);
+    padding: 5px;
+    border-radius: 40px;
+    margin-right: 10px;
+    border: 1px solid rgb(249, 91, 117);
+    transition: 1s ease;
+    font-weight: bold;
+}
+.link-button:hover , .link-button-resume:hover{
+    box-shadow: 10px 10px 35px #ff5555;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+.education-box,.skill-box,.project-box{
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+.contact{
+    background-color: #f4a5a5;
+    display: flex;
+    flex-direction: column;
+    padding-right: 200px;
+    padding-left: 300px;
+    padding-top: 20px;
+}
+.skill-logo,.skill-logo-space{
+    width: 100px;
+    height: 100px;
+    transition: .5s ease;
+}
+
+.programming-box,.web-box{
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 200px; 
+    padding-right: 150px;
+}
+.web-box{
+    width: 900px;
+}
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+    border-radius: 15px;
+}
+
+.card:hover{
+    transform: translateY(20px);
+    border-radius: 15px;
+}
+
+.card:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(241, 70, 70, 0.5), rgb(114, 1, 1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 15px;
+}
+.card:hover:before{
+    opacity: 1;
+    border-radius: 15px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info{
+    opacity: 1;
+    transform: translateY(30px);
+}
+
+
+.hotel,.hotel-1{
+    width: 300px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right:5px;
+    padding-left: 5px;
+}
+.para{
+    width: 500px;
+}
+.output{
+    width: 300px;
+    height: 350px;
+    transition: .5s ease;
+}
+.output:hover{
+    width: 500px;
+    height: 500px;
+}
+.hotel:hover,.hotel-1:hover{
+    width: 500px;
+    height: 700px;
+}
+.skill-logo-space{
+    margin-top: 20px;
+}
+.c:hover, .html:hover ,.hotel:hover,.hotel-1:hover{
+    box-shadow:0 5px 15px #6e323b;
+    border-radius: 10px;
+}
+.video{
+    width: 300px;
+    height: 350px;
+}
+.container{
+    background-color: rgb(236, 195, 202);
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 20px;
+    border-radius: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 3px solid #6F373F;
+    box-shadow:0 5px 15px #ac7474;
+    padding-bottom: 30px;
+    width: 800px;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 700px;
+    padding-right: 100px;
+}
+form input,textarea {
+    margin: 20px;
+    border:3px solid #6F373F;
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 10px;
+    width: 500px;
+}
+
+form button{
+    background-color: white;
+    color: #994C58;
+    border: 2px solid #6F373F;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+}
+form button:hover{
+    box-shadow: 0 5px 15px rgb(249, 91, 117)
+}
+.copyright{
+    font-size:15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* ipad modification */
+@media(max-width: 850px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -200%;
+        height: 100vh;
+        width: 400px;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        align-items: top;
+        justify-content: start;
+        background-color: rgba(239, 146, 163, 0.664);
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left: 0px;
+    }
+
+    .home-box{
+        flex-direction: column;
+        width: 600px;
+    }
+    .objective{
+        width: 500px;
+    }
+    .about-box, .education-box, .skill-box, .project-box, .contact{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+    form input,textarea {
+        width: 300px;
+    }
+    form{
+        width: 500px;
+    }
+    .container{
+        width: 600px;
+    }
+    .programming-box,.web-box{
+        width: 700px;
+        flex-shrink: 1;
+        flex-direction: column;
+        padding-right:0px;
+    }
+    .para{
+        width: 500px;
+    }
+    .hotel{
+        margin-top: 100px;
+    }
+    .output:active{
+        width: 500px;
+        height: 500px;
+    }
+    .wrapper{
+        flex-direction: column;
+        column-gap: 20px;
+    }
+    .card{
+        margin-bottom: 20px;
+    } 
+    
+}
+
+
+@media(max-width: 500px){
+    .home-box{
+        flex-direction: column;
+        width: 350px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .objective{
+        width: 290px;
+    }
+    .about-box, .education-box, .skill-box, .project-box, .contact{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    form input,textarea {
+        width: 270px;
+    }
+    form{
+        width: 300px;
+    }
+    .container{
+        width: 350px;
+    }
+    .contact-text{
+        font-size: 35px;
+    }
+    .programming-box,.web-box{
+        width: 400px;
+        flex-direction: column;
+        padding-right:20px;
+    }
+    .para{
+        width: 300px;
+    }
+    .hotel{
+        width: 300px;
+        height: 800px;
+        margin-top: 350px;
+    }
+    .video, .output{
+        padding-right: 20px;
+    }
+    
+}
